@@ -3,6 +3,7 @@ PACK_VERSION ?= $(shell awk -F ' = ' '$$1 == "version" { gsub(/"/, "", $$2); pri
 DIST_DIR ?= dist
 PACKWIZ ?= $(shell if command -v packwiz >/dev/null 2>&1; then command -v packwiz; elif [ -x "$$HOME/go/bin/packwiz" ]; then printf '%s\n' "$$HOME/go/bin/packwiz"; fi)
 PACKWIZ_IMPORT_CACHE ?= $(HOME)/.cache/packwiz/cache/import
+PACKWIZ_MANUAL_DOWNLOAD_DIR ?= manual-downloads
 ARTIFACT_PREFIX := $(PACK_NAME)-$(PACK_VERSION)
 
 .PHONY: help check-packwiz cache-manual-downloads refresh list test build build-client build-server modrinth curseforge-client curseforge-server clean
@@ -10,7 +11,7 @@ ARTIFACT_PREFIX := $(PACK_NAME)-$(PACK_VERSION)
 help:
 	@printf '%s\n' 'Available targets:'
 	@printf '  %-20s %s\n' 'make refresh' 'Refresh packwiz index.toml'
-	@printf '  %-20s %s\n' 'make cache-manual-downloads' 'Copy override jars into packwiz import cache'
+	@printf '  %-20s %s\n' 'make cache-manual-downloads' 'Copy manual download jars into packwiz import cache'
 	@printf '  %-20s %s\n' 'make list' 'List packwiz files/mods'
 	@printf '  %-20s %s\n' 'make test' 'Run lightweight pack validation'
 	@printf '  %-20s %s\n' 'make build' 'Build all release artifacts'
@@ -31,12 +32,12 @@ check-packwiz:
 
 cache-manual-downloads:
 	@mkdir -p "$(PACKWIZ_IMPORT_CACHE)"
-	@set -- overrides/mods/*.jar; \
+	@set -- "$(PACKWIZ_MANUAL_DOWNLOAD_DIR)"/*.jar; \
 	if [ -e "$$1" ]; then \
 		cp -f "$$@" "$(PACKWIZ_IMPORT_CACHE)/"; \
-		printf 'Copied %s override jars to %s\n' "$$#" "$(PACKWIZ_IMPORT_CACHE)"; \
+		printf 'Copied %s manual download jars to %s\n' "$$#" "$(PACKWIZ_IMPORT_CACHE)"; \
 	else \
-		printf '%s\n' 'No override jars found to cache.'; \
+		printf '%s\n' 'No manual download jars found to cache.'; \
 	fi
 
 refresh: check-packwiz
