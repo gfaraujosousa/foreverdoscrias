@@ -1,13 +1,16 @@
 PACK_NAME ?= $(shell awk -F ' = ' '$$1 == "name" { gsub(/"/, "", $$2); print $$2; exit }' pack.toml)
 PACK_VERSION ?= $(shell awk -F ' = ' '$$1 == "version" { gsub(/"/, "", $$2); print $$2; exit }' pack.toml)
 DIST_DIR ?= dist
+PACKWIZ ?= $(shell if command -v packwiz >/dev/null 2>&1; then command -v packwiz; elif [ -x "$$HOME/go/bin/packwiz" ]; then printf '%s\n' "$$HOME/go/bin/packwiz"; fi)
+PACKWIZ_IMPORT_CACHE ?= $(HOME)/.cache/packwiz/cache/import
 ARTIFACT_PREFIX := $(PACK_NAME)-$(PACK_VERSION)
 
-.PHONY: help check-packwiz refresh list test build build-client build-server modrinth curseforge-client curseforge-server clean
+.PHONY: help check-packwiz cache-manual-downloads refresh list test build build-client build-server modrinth curseforge-client curseforge-server clean
 
 help:
 	@printf '%s\n' 'Available targets:'
 	@printf '  %-20s %s\n' 'make refresh' 'Refresh packwiz index.toml'
+	@printf '  %-20s %s\n' 'make cache-manual-downloads' 'Copy override jars into packwiz import cache'
 	@printf '  %-20s %s\n' 'make list' 'List packwiz files/mods'
 	@printf '  %-20s %s\n' 'make test' 'Run lightweight pack validation'
 	@printf '  %-20s %s\n' 'make build' 'Build all release artifacts'
@@ -17,20 +20,30 @@ help:
 	@printf '  %-20s %s\n' 'make curseforge-client' 'Build CurseForge client zip'
 	@printf '  %-20s %s\n' 'make curseforge-server' 'Build CurseForge server zip'
 	@printf '  %-20s %s\n' 'make clean' 'Remove build artifacts'
-	@printf '\n%s\n' 'Override defaults with PACK_VERSION=..., PACK_NAME=..., or DIST_DIR=...'
+	@printf '\n%s\n' 'Override defaults with PACK_VERSION=..., PACK_NAME=..., DIST_DIR=..., or PACKWIZ=...'
 
 check-packwiz:
-	@command -v packwiz >/dev/null 2>&1 || { \
+	@[ -n "$(PACKWIZ)" ] || { \
 		printf '%s\n' 'packwiz is required but was not found in PATH.' >&2; \
 		printf '%s\n' 'Install it with: go install github.com/packwiz/packwiz@latest' >&2; \
 		exit 1; \
 	}
 
+cache-manual-downloads:
+	@mkdir -p "$(PACKWIZ_IMPORT_CACHE)"
+	@set -- overrides/mods/*.jar; \
+	if [ -e "$$1" ]; then \
+		cp -f "$$@" "$(PACKWIZ_IMPORT_CACHE)/"; \
+		printf 'Copied %s override jars to %s\n' "$$#" "$(PACKWIZ_IMPORT_CACHE)"; \
+	else \
+		printf '%s\n' 'No override jars found to cache.'; \
+	fi
+
 refresh: check-packwiz
-	packwiz --yes refresh
+	"$(PACKWIZ)" --yes refresh
 
 list: check-packwiz
-	packwiz list
+	"$(PACKWIZ)" list
 
 test: refresh list
 
@@ -40,17 +53,17 @@ build-client: modrinth curseforge-client
 
 build-server: curseforge-server
 
-modrinth: check-packwiz
+modrinth: check-packwiz cache-manual-downloads
 	mkdir -p "$(DIST_DIR)"
-	packwiz --yes modrinth export --output "$(DIST_DIR)/$(ARTIFACT_PREFIX).mrpack"
+	"$(PACKWIZ)" --yes modrinth export --output "$(DIST_DIR)/$(ARTIFACT_PREFIX).mrpack"
 
 curseforge-client: check-packwiz
 	mkdir -p "$(DIST_DIR)"
-	packwiz --yes curseforge export --side client --output "$(DIST_DIR)/$(ARTIFACT_PREFIX)-curseforge-client.zip"
+	"$(PACKWIZ)" --yes curseforge export --side client --output "$(DIST_DIR)/$(ARTIFACT_PREFIX)-curseforge-client.zip"
 
 curseforge-server: check-packwiz
 	mkdir -p "$(DIST_DIR)"
-	packwiz --yes curseforge export --side server --output "$(DIST_DIR)/$(ARTIFACT_PREFIX)-curseforge-server.zip"
+	"$(PACKWIZ)" --yes curseforge export --side server --output "$(DIST_DIR)/$(ARTIFACT_PREFIX)-curseforge-server.zip"
 
 clean:
 	rm -rf "$(DIST_DIR)"

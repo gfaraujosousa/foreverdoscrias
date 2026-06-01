@@ -1,13 +1,13 @@
 name = "Talking Heads"
-filename = "TalkingHeads-1.1.1-helmetfix+1.21.1+neoforge.jar"
+filename = "TalkingHeads-1.1.0+1.21.1+neoforge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "7e9a10e63b77f634282b59a553e45fec43014da2"
+hash = "226798be0d301853bf2f13be147ab193c6999698"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8154929
+file-id = 7639722
 project-id = 1108100

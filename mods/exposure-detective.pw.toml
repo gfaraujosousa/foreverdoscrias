@@ -1,13 +1,13 @@
 name = "Exposure: Detective"
-filename = "ExposureDetective-1.21.1-1.0.1.jar"
+filename = "Exposure Detective-1.0.0-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "7e35a82a57902571e46aadc64440bfaffd56c435"
+hash = "7ac25a5601eeb837bc42bf47ddc2f992319cc28e"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8122457
+file-id = 8004184
 project-id = 1527577
