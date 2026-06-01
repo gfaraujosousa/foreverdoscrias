@@ -1,0 +1,13 @@
+name = "FreeCamMC"
+filename = "freecam-neoforge-1.2.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/EiMzaPzk/versions/rN0lM5S8/freecam-neoforge-1.2.0.jar"
+hash-format = "sha512"
+hash = "0d9a6bc0ecec08fc65b85a5014c5b07b8c213d9c53209cca0facf0c6557466eff3a17fff4ac83d89dbb5860a14889ed7cb67a1beb9d5cdfdd230ba66014c0215"
+
+[update]
+[update.modrinth]
+mod-id = "EiMzaPzk"
+version = "rN0lM5S8"

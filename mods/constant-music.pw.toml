@@ -1,0 +1,13 @@
+name = "Constant Music"
+filename = "constantmusic-neoforge-1.0.6+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "853d2a8a0f4c91047909d4a49ba5fdd328e6eb34"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6954009
+project-id = 949032

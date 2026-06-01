@@ -1,0 +1,13 @@
+name = "Enchantment Level Cap Indicator"
+filename = "enchantmentlevelcapindicator-1.21.1-1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "913b42d2b17cf4f56d62e22f6db9475e801100bc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6250442
+project-id = 1204463

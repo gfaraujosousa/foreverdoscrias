@@ -1,0 +1,13 @@
+name = "Starcatcher's Delight"
+filename = "starcatcher_delight-1.0-NEOFORGE-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a896c05c38848ec9d5add0fce63bcb374e86cb92"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8079105
+project-id = 1450970

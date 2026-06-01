@@ -1,0 +1,13 @@
+name = "Infinity Cave"
+filename = "infinity_cave-0.7-NeoForge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8f7c239b04730aa47720c16b9b9b4ee7bb4ba53f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5959981
+project-id = 951204

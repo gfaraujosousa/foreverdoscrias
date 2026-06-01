@@ -1,0 +1,83 @@
+name: Build modpack
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Export packwiz builds
+    runs-on: ubuntu-latest
+    env:
+      PACKWIZ_MANUAL_DOWNLOADS_B64: ${{ secrets.PACKWIZ_MANUAL_DOWNLOADS_B64 }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Read pack metadata
+        id: metadata
+        shell: bash
+        run: |
+          PACK_NAME=$(awk -F ' = ' '$1 == "name" { gsub(/"/, "", $2); print $2; exit }' pack.toml)
+          PACK_VERSION=${GITHUB_REF_NAME#v}
+
+          if [ -z "$PACK_NAME" ]; then
+            echo "pack.toml does not define a pack name" >&2
+            exit 1
+          fi
+
+          echo "pack-name=$PACK_NAME" >> "$GITHUB_OUTPUT"
+          echo "pack-version=$PACK_VERSION" >> "$GITHUB_OUTPUT"
+          echo "artifact-prefix=$PACK_NAME-$PACK_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Refresh packwiz index
+        run: packwiz --yes refresh
+
+      - name: Restore packwiz manual downloads
+        if: env.PACKWIZ_MANUAL_DOWNLOADS_B64 != ''
+        run: |
+          mkdir -p "$HOME/.cache/packwiz/cache/import"
+          printf '%s' "$PACKWIZ_MANUAL_DOWNLOADS_B64" | base64 --decode > /tmp/packwiz-manual-downloads.zip
+          unzip -j /tmp/packwiz-manual-downloads.zip -d "$HOME/.cache/packwiz/cache/import"
+
+      - name: Export Modrinth pack
+        run: |
+          mkdir -p dist
+          packwiz --yes modrinth export \
+            --output "dist/${{ steps.metadata.outputs.artifact-prefix }}.mrpack"
+
+      - name: Export CurseForge pack
+        run: |
+          mkdir -p dist
+          packwiz --yes curseforge export \
+            --side client \
+            --output "dist/${{ steps.metadata.outputs.artifact-prefix }}-curseforge.zip"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ steps.metadata.outputs.artifact-prefix }}"
+          path: |
+            dist/*.mrpack
+            dist/*.zip
+          if-no-files-found: error
+
+      - name: Attach builds to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.mrpack
+            dist/*.zip

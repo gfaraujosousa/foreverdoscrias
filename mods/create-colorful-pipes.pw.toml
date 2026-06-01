@@ -1,0 +1,13 @@
+name = "Create: Colorful Pipes"
+filename = "Create_Colorful_Pipes_NeoForge-2.4.0+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "73fdc0d59111cbec4bef06936589e0ed8c891cb9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8147155
+project-id = 1487757

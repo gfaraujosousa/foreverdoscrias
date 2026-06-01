@@ -1,0 +1,77 @@
+#.
+#Config for RTG Generator
+[RTG]
+
+	#.
+	#.
+	#Burn times
+	[RTG.burn_time]
+		#.
+		#The burn time of the low-power RTG fuel.
+		# Default: 12000
+		# Range: > 20
+		burnTimeLow = 12000
+		#.
+		#The burn time of the medium-power RTG fuel.
+		# Default: 18000
+		# Range: > 20
+		burnTimeMedium = 18000
+		#.
+		#The burn time of the high-power RTG fuel.
+		# Default: 24000
+		# Range: > 20
+		burnTimeHigh = 24000
+		#.
+		#The burn time of the extreme-power RTG fuel.
+		# Default: 30000
+		# Range: > 20
+		burnTimeExtreme = 30000
+
+	#.
+	#Voltage
+	[RTG.voltage]
+		#.
+		#The base voltage of the RTG.
+		# Default: 100
+		# Range: > 0
+		voltageBase = 100
+		#.
+		#The voltage increase per fuels power level.
+		# Default: 20
+		# Range: > 0
+		voltagePerLevel = 20
+
+	#.
+	#Power
+	[RTG.power]
+		#.
+		#The base power output of the RTG.
+		# Default: 2000
+		# Range: > 0
+		powerBase = 2000
+		#.
+		#The power increase per fuels power level.
+		# Default: 5000
+		# Range: > 0
+		powerPerLevel = 5000
+		#.
+		#The percentage of RTG's power output that will be lost at the end of a fuels burn time.
+		#0.0 = no decay, 1.0 = full decay.
+		# Default: 0.30000001192092896
+		# Range: 0.0 ~ 1.0
+		maxRTGPowerDecay = 0.30000001192092896
+
+#.
+#Config for Solar Panel
+["Solar Panel"]
+	#.
+	#.
+	#The voltage output of the solar panel.
+	# Default: 120
+	# Range: > 0
+	voltageBase = 120
+	#.
+	#The power output of the solar panel.
+	# Default: 1000
+	# Range: > 0
+	powerBase = 1000

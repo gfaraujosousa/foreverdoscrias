@@ -1,0 +1,9 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"kubejs:otherworld_anchor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:otherworld_shard"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:stabilized_otherworld_shard"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:mana_mechanism"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:arcane_precision_mechanism"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:otherworld_core"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
