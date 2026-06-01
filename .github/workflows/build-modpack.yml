@@ -54,17 +54,13 @@ jobs:
           unzip -j /tmp/packwiz-manual-downloads.zip -d "$HOME/.cache/packwiz/cache/import"
 
       - name: Export Modrinth pack
-        run: |
-          mkdir -p dist
-          packwiz --yes modrinth export \
-            --output "dist/${{ steps.metadata.outputs.artifact-prefix }}.mrpack"
+        run: make modrinth PACK_VERSION="${{ steps.metadata.outputs.pack-version }}"
 
-      - name: Export CurseForge pack
-        run: |
-          mkdir -p dist
-          packwiz --yes curseforge export \
-            --side client \
-            --output "dist/${{ steps.metadata.outputs.artifact-prefix }}-curseforge.zip"
+      - name: Export CurseForge client pack
+        run: make curseforge-client PACK_VERSION="${{ steps.metadata.outputs.pack-version }}"
+
+      - name: Export CurseForge server pack
+        run: make curseforge-server PACK_VERSION="${{ steps.metadata.outputs.pack-version }}"
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
