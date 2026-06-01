@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#forever:is_otherworld",
+    {
+      "id": "#aether:is_aether",
+      "required": false
+    },
+    {
+      "id": "#undergarden:is_undergarden",
+      "required": false
+    }
+  ]
+}

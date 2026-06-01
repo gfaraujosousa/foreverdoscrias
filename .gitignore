@@ -20,19 +20,12 @@
 /replay_recordings/
 
 # Launcher/runtime files
-/options.txt
 /optionsof.txt
 /servers.dat
 /usercache.json
 /usernamecache.json
 /launcher_profiles.json
 /realms_persistence.json
-
-# Downloaded/generated mod jars
-/mods/*.jar
-
-# But allow intentionally bundled private custom jars in overrides
-!/overrides/mods/*.jar
 
 # Optional: local dev-only custom jars
 /local-mods/

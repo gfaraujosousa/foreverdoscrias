@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#forever:is_otherworld",
+  "features": [
+    "minecraft:ore_coal_upper",
+    "minecraft:ore_iron_upper",
+    "minecraft:ore_copper",
+    "minecraft:ore_gold",
+    "minecraft:ore_redstone",
+    "minecraft:ore_lapis",
+    "minecraft:ore_diamond"
+  ],
+  "step": "underground_ores"
+}

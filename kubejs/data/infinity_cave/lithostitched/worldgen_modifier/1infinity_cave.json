@@ -1,0 +1,20 @@
+{
+  "type": "lithostitched:remove_features",
+  "predicate": {
+    "type": "lithostitched:true"
+  },
+  "biomes": "#forever:no_biomes",
+  "features": [
+    "infinity_cave:spawning",
+    "infinity_cave:generic/delta",
+    "infinity_cave:generic/rock",
+    "infinity_cave:generic/pillar",
+    "infinity_cave:generic/big_pillar",
+    "infinity_cave:generic/small_pillar",
+    "infinity_cave:generic/ores/iron",
+    "infinity_cave:generic/pile",
+    "infinity_cave:generic/ceiling",
+    "infinity_cave:generic/replace"
+  ],
+  "step": "raw_generation"
+}

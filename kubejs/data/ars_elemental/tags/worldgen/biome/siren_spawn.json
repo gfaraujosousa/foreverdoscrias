@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "#forever:otherworld_marsh",
+    {
+      "id": "ars_elemental:cascading_forest",
+      "required": false
+    }
+  ]
+}

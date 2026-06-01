@@ -1,0 +1,8 @@
+#Sun May 24 03:23:23 BRT 2026
+AUTO_EXPOSURE=true
+BLOOM_RADIUS=1
+BLOOM_STRENGTH=0.25
+SHADOW_COLOR=false
+TAA=false
+shadowDistance=192.0
+shadowMapResolution=1536
