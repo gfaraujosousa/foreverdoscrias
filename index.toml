@@ -1321,10 +1321,6 @@ file = "config/bountiful/bountiful.json"
 hash = "eeead79d2c51bca73a1174aeadd2cef9c12feea8ae8083121c15e47b0563ebc0"
 
 [[files]]
-file = "config/bountiful/errors.log"
-hash = "9ee9ea43545c0bbf737cbd3a3c55efb14a726cd8df1a8333201cfedcde194d05"
-
-[[files]]
 file = "config/bridgingmod.json"
 hash = "2f3b312ba9110f5af338d362b35f09c442c01cc4cb9187da9626de7cc10e2d01"
 
@@ -3003,10 +2999,6 @@ hash = "543e09f71cda1d97d238ac4150e43e50868cf781027c88d68fc714f261d88982"
 [[files]]
 file = "config/yacl.json5"
 hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
-
-[[files]]
-file = "dist/foreverdoscrias-1.0.0-curseforge-client.zip"
-hash = "8c1b31c86b7cb134d07f88c0c5e3316c4c6c87dbfb981a12271bfab6a5962ecc"
 
 [[files]]
 file = "mods/aces-spell-utils.pw.toml"

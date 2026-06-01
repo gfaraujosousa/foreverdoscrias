@@ -1,0 +1,55 @@
+# Build/export outputs
+/builds/
+/dist/
+/export/
+*.mrpack
+*.zip
+
+# Minecraft runtime folders
+/run/
+/.minecraft/
+/logs/
+/crash-reports/
+/debug/
+/saves/
+/screenshots/
+/backups/
+/journeymap/
+/xaero/
+/dumps/
+/replay_recordings/
+
+# Launcher/runtime files
+/options.txt
+/optionsof.txt
+/servers.dat
+/usercache.json
+/usernamecache.json
+/launcher_profiles.json
+/realms_persistence.json
+
+# Downloaded/generated mod jars
+/mods/*.jar
+
+# Packwiz temporary/cache files
+/.packwiz/
+/packwiz-installer-bootstrap.jar
+/packwiz-installer.jar
+
+# Java/Gradle if helper tools or local forks are built here
+/.gradle/
+/build/
+/out/
+/target/
+*.class
+*.log
+hs_err_pid*
+
+# IDE/editor
+/.idea/
+/.vscode/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
