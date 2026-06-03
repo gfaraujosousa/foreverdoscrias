@@ -1,6 +1,6 @@
 filename = 'deimos-1.21.1-neoforge-2.6.jar'
 name = 'Deimos Lib'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

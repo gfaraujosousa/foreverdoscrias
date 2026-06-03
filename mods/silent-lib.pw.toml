@@ -1,6 +1,6 @@
 filename = 'silent-lib-1.21.1-neoforge-10.6.0.jar'
 name = 'Silent Lib (silentlib)'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

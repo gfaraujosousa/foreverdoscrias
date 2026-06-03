@@ -1217,40 +1217,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["6C2C135B9B7B9402"]
-			hide_dependency_lines: true
-			id: "4E895C54651A3CB3"
-			rewards: [
-				{
-					count: 3
-					id: "583154B1FC32C8A9"
-					item: {
-						count: 1
-						id: "minecraft:blaze_rod"
-					}
-					type: "item"
-				}
-				{
-					count: 6
-					id: "266524C4FD6EDE3E"
-					item: {
-						count: 1
-						id: "constructionstick:wooden_stick"
-					}
-					type: "item"
-				}
-			]
-			shape: "pentagon"
-			size: 1.2d
-			tasks: [{
-				id: "32E6C837728B2EF1"
-				item: { count: 1, id: "minecraft:book" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 4.0d
-		}
-		{
 			dependencies: [
 				"31E7F7464D79F881"
 				"105442DA79829777"

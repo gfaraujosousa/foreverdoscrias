@@ -35,16 +35,6 @@
 		}
 		{
 			count: 2
-			id: "26DFB8860811B338"
-			item: {
-				count: 1
-				id: "sophisticatedstorage:upgrade_base"
-			}
-			random_bonus: 1
-			weight: 1.5f
-		}
-		{
-			count: 2
 			id: "49B02DB1CBAE715B"
 			item: {
 				count: 1
@@ -52,15 +42,6 @@
 			}
 			random_bonus: 1
 			weight: 1.5f
-		}
-		{
-			count: 2
-			id: "035791A1CC2639D4"
-			item: {
-				count: 1
-				id: "functionalstorage:oak_1"
-			}
-			random_bonus: 1
 		}
 		{ id: "09AEBD67369F6FF7", item: { count: 1, id: "minecraft:chest_minecart" } }
 		{
@@ -72,21 +53,7 @@
 			random_bonus: 1
 			weight: 1.5f
 		}
-		{ id: "185EB7E09EAFBB69", item: { count: 1, id: "sophisticatedstorage:packing_tape" } }
 		{ id: "3AA1435E1D7007F8", item: { count: 1, id: "trashcans:item_trash_can" } }
 		{ id: "02BA8DC1689E6AB0", item: { count: 1, id: "minecraft:oak_chest_boat" } }
-		{
-			count: 2
-			id: "63CA60C3120B6956"
-			item: {
-				components: {
-					"sophisticatedstorage:wood_type": "oak"
-				}
-				count: 1
-				id: "sophisticatedstorage:chest"
-			}
-			random_bonus: 1
-			weight: 1.5f
-		}
 	]
 }

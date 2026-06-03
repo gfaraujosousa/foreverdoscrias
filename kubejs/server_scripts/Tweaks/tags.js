@@ -25,9 +25,6 @@ ServerEvents.tags('block', allthemods => {
     ['@ae2', '@advancedae', '@extendedae', '@megacells', '@appflux', '@appmek']
   )
 
-  // Just Dire Things
-  allthemods.add('justdirethings:lawnmowerable', '#c:grass')
-  allthemods.add('justdirethings:tick_speed_deny', '@industrialforegoingsouls')
   // Saltpeter Block
   allthemods.add('c:storage_blocks/niter', 'kubejs:saltpeter_block')
   allthemods.add('c:storage_blocks/saltpeter', 'kubejs:saltpeter_block')
@@ -43,8 +40,6 @@ ServerEvents.tags('fluid', allthemods => {
 ServerEvents.tags('item', allthemods => {
   // Extreme Reactors (using config/almostunified/tags.json)
   // allthemods.add('c:ingots/yellorium', 'alltheores:uranium_ingot')
-  allthemods.add('c:storage_blocks/raw_yellorium', 'bigreactors:raw_yellorium_block')
-
   // Tiny Coal
   allthemods.add('atm10:tiny_coals', [
     'utilitarian:tiny_coal',
@@ -93,7 +88,6 @@ ServerEvents.tags('item', allthemods => {
   allthemods.add('minecraft:bookshelf_books', 'patchouli:guide_book')
   allthemods.add('minecraft:bookshelf_books', 'evilcraft:origins_of_darkness')
   allthemods.add('minecraft:bookshelf_books', 'ae2:guide')
-  allthemods.add('minecraft:bookshelf_books', 'powah:book')
   allthemods.add('minecraft:bookshelf_books', 'actuallyadditions:booklet')
 
   // Forbiden Arcanus Stellar Blacklist
@@ -173,10 +167,6 @@ ServerEvents.tags('entity_type', allthemods => {
   allthemods.add('ars_nouveau:jar_blacklist', "the_bumblezone:bee_queen")
   allthemods.add('apothic_spawners:blacklisted_from_spawners', '#allthemods:jank_blacklist')
   allthemods.add('enderio:soul_vial_blacklist', '#allthemods:jank_blacklist')
-  allthemods.add('industrialforegoing:mob_duplicator_blacklist', '#allthemods:jank_blacklist')
-  allthemods.add('industrialforegoing:mob_crusher_blacklist', '#allthemods:jank_blacklist')
-  allthemods.add('justdirethings:paradox_deny', '#allthemods:jank_blacklist');
-  allthemods.add('tombstone:unhandled_tamable', '#allthemods:jank_blacklist')
   allthemods.add('mob_grinding_utils:no_swab', '#allthemods:jank_blacklist')
   allthemods.add('mob_grinding_utils:no_spawn', '#allthemods:jank_blacklist')
   allthemods.add('enderio:spawner_blacklist', '#allthemods:jank_blacklist')
@@ -518,11 +508,6 @@ ServerEvents.tags('block', allthemods => {
     "dyenamicsandfriends:chromacarvings_wine_jack_o_lantern"
   ])
 })
-
-ServerEvents.tags('worldgen/biome', allthemods => {
-  // JustDireThings
-  allthemods.add('justdirethings:unstable_portal_fluid_viable', ["nullscape:crystal_peaks", "nullscape:shadowlands", "nullscape:void_barrens"]);
-});
 
 ServerEvents.tags('mob_effect', allthemods => {
   

@@ -1,6 +1,6 @@
 filename = 'create_ultimate_factory-2.2.4-neoforge-1.21.1.jar'
 name = 'Create: Ultimate Factory'
-side = 'server'
+side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'

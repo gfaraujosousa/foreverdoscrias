@@ -530,26 +530,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["31AD9826FB036C98"]
-			id: "40B757772D0FBAC9"
-			rewards: [{
-				id: "6D21710E315BC55A"
-				item: {
-					count: 1
-					id: "mob_grinding_utils:spikes"
-				}
-				type: "item"
-			}]
-			size: 1.2d
-			tasks: [{
-				id: "5A42F3E1E83F263C"
-				item: { count: 1, id: "forbidden_arcanus:test_tube" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 0.5d
-		}
-		{
 			dependencies: ["3999AE0921641E60"]
 			id: "2ADA491A2485061C"
 			rewards: [{
@@ -705,29 +685,6 @@
 				type: "observation"
 			}]
 			x: 16.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"185DBBDD252CBA0C"
-				"198E9E90CC9606C4"
-			]
-			id: "07BEE6FEC14765DC"
-			rewards: [{
-				count: 16
-				id: "6382ECAF771645DE"
-				item: {
-					count: 1
-					id: "pipez:item_pipe"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "41E6EA289B6E1E0C"
-				item: { count: 1, id: "forbidden_arcanus:ferrognetic_mixture" }
-				type: "item"
-			}]
-			x: 14.5d
 			y: -1.0d
 		}
 		{
@@ -1625,45 +1582,6 @@
 			dependencies: ["15849165CA8C00F9"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			id: "3DF1435A15515DA9"
-			rewards: [{
-				id: "3DD67371C0B80B51"
-				item: {
-					count: 1
-					id: "forbidden_arcanus:eternal_stella"
-				}
-				type: "item"
-			}]
-			size: 1.3d
-			tasks: [
-				{
-					id: "483CE85A24790D59"
-					item: { count: 1, id: "justdirethings:blockbreakert2" }
-					type: "item"
-				}
-				{
-					id: "7186C02D092E441D"
-					item: { count: 1, id: "justdirethings:blockplacert2" }
-					type: "item"
-				}
-				{
-					id: "5FAA1C6E7BFEE271"
-					item: { count: 1, id: "justdirethings:clickert2" }
-					type: "item"
-				}
-				{
-					id: "7F8A853B386AB2F2"
-					item: { count: 1, id: "forbidden_arcanus:soul_extractor" }
-					type: "item"
-				}
-			]
-			x: 33.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["15849165CA8C00F9"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "3227846235A60B58"
 			rewards: [
 				{
@@ -1857,84 +1775,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["3227846235A60B58"]
-			id: "0C25F73C0E0FB22A"
-			rewards: [{
-				id: "6F97252825A68AC4"
-				type: "xp_levels"
-				xp_levels: 2
-			}]
-			shape: "hexagon"
-			size: 1.3d
-			tasks: [{
-				id: "7D5D7AC5C7F9C956"
-				item: { count: 1, id: "justdirethings:experienceholder" }
-				type: "item"
-			}]
-			x: 29.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["15849165CA8C00F9"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "0BCC79C1D002F532"
-			rewards: [
-				{
-					id: "05E813320EB3B10B"
-					item: {
-						count: 1
-						id: "integratedtunnels:part_importer_fluid"
-					}
-					type: "item"
-				}
-				{
-					id: "60A5994CCAE48A62"
-					item: {
-						count: 1
-						id: "integratedtunnels:part_interface_fluid"
-					}
-					type: "item"
-				}
-				{
-					id: "68143020E5192D56"
-					item: {
-						count: 1
-						id: "integrateddynamics:variable"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "768E5111A892E9C6"
-				item: { count: 1, id: "cookingforblockheads:sink" }
-				type: "item"
-			}]
-			x: 29.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["15849165CA8C00F9"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "1D94F59F13667DCF"
-			rewards: [{
-				id: "57625CDFA5E3E6EB"
-				item: {
-					count: 1
-					id: "industrialforegoing:fluid_extractor"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "371B4ABC3A7608F5"
-				item: { count: 1, id: "productivetrees:soul_tree_sapling" }
-				type: "item"
-			}]
-			x: 34.0d
-			y: -2.5d
-		}
-		{
 			dependencies: [
 				"1D94F59F13667DCF"
 				"3DF1435A15515DA9"
@@ -2006,28 +1846,6 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0C25F73C0E0FB22A"]
-			hide_until_deps_visible: true
-			id: "4E014B495668A601"
-			rewards: [{
-				count: 3
-				id: "664EE6EA31620135"
-				item: {
-					count: 1
-					id: "justdirethings:xp_fluid_bucket"
-				}
-				type: "item"
-			}]
-			size: 1.3d
-			tasks: [{
-				id: "3B22A6E895A1BE70"
-				item: { count: 1, id: "justdirethings:xp_fluid_bucket" }
-				type: "item"
-			}]
-			x: 30.5d
 			y: 0.5d
 		}
 		{

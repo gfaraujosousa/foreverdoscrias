@@ -77,25 +77,11 @@ ServerEvents.recipes(allthemods => {
     addAACrusher('#c:ores/sulfur', 'alltheores:sulfur', 4, 0.5)
     addAACrusher('#c:ores/salt', 'alltheores:salt', 4, 0.5)
 
-    //Mystical Agriculture
-    addAACrusher('#c:ores/prosperity', 'mysticalagriculture:prosperity_shard', 3, 0.5)
-    addAACrusher('#c:ores/inferium', 'mysticalagriculture:inferium_essence', 3, 0.5)
-
     //Theurgy
     addAACrusher('#c:ores/sal_ammoniac', 'theurgy:sal_ammoniac_crystal', 3, 0.5)
 
-    //Powah
-    addAACrusher('#c:ores/uraninite_poor', 'powah:uraninite_raw', 2, 0)
-    addAACrusher('#c:ores/uraninite_regular', 'powah:uraninite_raw', 4, 0)
-    addAACrusher('#c:ores/uraninite_dense', 'powah:uraninite_raw', 6, 0)
-
     //Iron's Spellbooks
     addAACrusher('#c:ores/mithril', 'irons_spellbooks:raw_mithril', 4, 0.5)
-
-    //Xycraft World
-    global.xycraftColours.forEach(colour => {
-        addAACrusher(`#c:ores/xychorium_${colour}`, `xycraft_world:xychorium_gem_${colour}`, 4, 0)
-      })
 })
 
 // This File has been authored by AllTheMods Staff, or a Community contributor for use in AllTheMods - AllTheMods 10.

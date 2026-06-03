@@ -1,6 +1,6 @@
 filename = 'justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar'
 name = 'Just Enough Breeding (JEBr)'
-side = 'server'
+side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'

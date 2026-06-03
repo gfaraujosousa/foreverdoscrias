@@ -1,6 +1,6 @@
 filename = 'moogs_structures-neoforge-1.21.1-2.0.2.jar'
 name = "Moog's Structure Lib (moogs_structures)"
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

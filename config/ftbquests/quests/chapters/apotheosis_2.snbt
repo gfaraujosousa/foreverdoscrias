@@ -392,41 +392,6 @@
 		}
 		{
 			dependencies: ["78E94C386B1E7359"]
-			icon: {
-				id: "mob_grinding_utils:mob_swab"
-			}
-			id: "2D8A7065F8CDDDDD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "14AB7688476C1E7A"
-					table_id: 487623848494439020L
-					type: "random"
-				}
-				{
-					id: "025B994E9FD2A991"
-					type: "xp"
-					xp: 100
-				}
-			]
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "09A203572F22E8C0"
-					item: { count: 1, id: "mob_grinding_utils:mob_swab" }
-					type: "item"
-				}
-				{
-					id: "6A994FB418E4E4F9"
-					item: { count: 1, id: "mob_grinding_utils:gm_chicken_feed" }
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["78E94C386B1E7359"]
 			id: "6D3B958E49AE7BDB"
 			rewards: [{
 				id: "20864F3CFAEE9AC2"
@@ -544,61 +509,6 @@
 		}
 		{
 			dependencies: ["0F0E227FC3EC0D90"]
-			icon: {
-				id: "mob_grinding_utils:entity_spawner"
-			}
-			id: "39E822440E7D2E04"
-			rewards: [{
-				count: 10
-				id: "11BAFE64320D8A4A"
-				item: {
-					count: 1
-					id: "mob_grinding_utils:solid_xp_baby"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "34F104E7633BBBD5"
-					item: { count: 1, id: "mob_grinding_utils:entity_spawner" }
-					type: "item"
-				}
-				{
-					id: "53D49F15F44633C5"
-					item: { count: 1, id: "mob_grinding_utils:xpsolidifier" }
-					type: "item"
-				}
-				{
-					id: "3DA4F5633DF0D9A2"
-					item: { count: 1, id: "mob_grinding_utils:solid_xp_mould_baby" }
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["0F0E227FC3EC0D90"]
-			id: "3F55F3CC8519D783"
-			rewards: [{
-				count: 8
-				id: "2F9367F293B4C29E"
-				item: {
-					count: 1
-					id: "mysticalagriculture:soulium_dust"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3723217873D61097"
-				item: { count: 1, id: "mysticalagriculture:soulium_spawner" }
-				type: "item"
-			}]
-			x: -0.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["0F0E227FC3EC0D90"]
 			id: "72AE56D34834D28E"
 			tasks: [{
 				id: "4CE833AB331E43E6"
@@ -607,23 +517,6 @@
 			}]
 			x: 0.5d
 			y: 8.0d
-		}
-		{
-			dependencies: ["0F0E227FC3EC0D90"]
-			id: "21C2458FED19363C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2F9C649B1E5EB36A"
-				table_id: 5124217649411489500L
-				type: "random"
-			}]
-			tasks: [{
-				id: "0B123D1F8C297D24"
-				item: { count: 1, id: "industrialforegoing:mob_duplicator" }
-				type: "item"
-			}]
-			x: -0.5d
-			y: 9.0d
 		}
 		{
 			dependencies: ["78E94C386B1E7359"]

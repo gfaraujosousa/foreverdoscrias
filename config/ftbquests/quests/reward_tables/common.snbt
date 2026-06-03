@@ -15,32 +15,6 @@
 			weight: 5.0f
 		}
 		{
-			id: "482D00118478C3B8"
-			item: {
-				count: 1
-				id: "functionalstorage:copper_upgrade"
-			}
-			weight: 5.0f
-		}
-		{
-			id: "5160D76EAE564D7D"
-			item: {
-				count: 1
-				id: "functionalstorage:oak_1"
-			}
-			random_bonus: 2
-			weight: 7.0f
-		}
-		{
-			id: "53673D52BECCA5EF"
-			item: {
-				count: 1
-				id: "functionalstorage:void_upgrade"
-			}
-			weight: 3.0f
-		}
-		{ id: "2B30C1CDC2E318AF", item: { count: 1, id: "functionalstorage:storage_controller" } }
-		{
 			id: "75ED90D1C539B2D9"
 			item: {
 				count: 1
@@ -66,40 +40,6 @@
 			weight: 5.0f
 		}
 		{
-			id: "3A9A8D2CC2F88F03"
-			item: {
-				count: 1
-				id: "ironfurnaces:augment_speed"
-			}
-			weight: 5.0f
-		}
-		{
-			id: "0F15BB126C9070A3"
-			item: {
-				count: 1
-				id: "ironfurnaces:augment_factory"
-			}
-			weight: 5.0f
-		}
-		{
-			id: "6145C667BACDBB9F"
-			item: {
-				count: 1
-				id: "ironfurnaces:item_spooky"
-			}
-			weight: 3.0f
-		}
-		{
-			count: 8
-			id: "068F40A46B8FD109"
-			item: {
-				count: 1
-				id: "pipez:universal_pipe"
-			}
-			random_bonus: 8
-			weight: 5.0f
-		}
-		{
 			id: "30B2567CC9436642"
 			item: {
 				count: 1
@@ -107,14 +47,6 @@
 			}
 			random_bonus: 2
 			weight: 3.0f
-		}
-		{
-			id: "2844067F153CA56B"
-			item: {
-				count: 1
-				id: "pipez:basic_upgrade"
-			}
-			weight: 7.0f
 		}
 		{
 			id: "02944E22246B9CE9"
@@ -148,7 +80,6 @@
 			}
 			weight: 5.0f
 		}
-		{ id: "3C5931B7D819BF0C", item: { count: 1, id: "modularrouters:modular_router" } }
 		{
 			count: 4
 			id: "03DEEEBEA44F12E9"
@@ -373,40 +304,6 @@
 			weight: 7.0f
 		}
 		{
-			id: "2398AC6769DBCDE2"
-			item: {
-				count: 1
-				id: "functionalstorage:oak_2"
-			}
-			random_bonus: 2
-			weight: 5.0f
-		}
-		{
-			id: "6262C2CB8F1F3536"
-			item: {
-				count: 1
-				id: "functionalstorage:oak_4"
-			}
-			random_bonus: 2
-			weight: 5.0f
-		}
-		{
-			id: "58566B400B981B92"
-			item: {
-				count: 1
-				id: "ironfurnaces:iron_furnace"
-			}
-			weight: 10.0f
-		}
-		{
-			id: "62326D34ABF1268B"
-			item: {
-				count: 1
-				id: "ironfurnaces:gold_furnace"
-			}
-			weight: 3.0f
-		}
-		{
 			id: "6EEFC6AE33EF83B5"
 			item: {
 				count: 1
@@ -458,8 +355,6 @@
 			weight: 5.0f
 		}
 		{ id: "3A1FB1ADEE7D8AB1", item: { count: 1, id: "ae2:flawless_budding_quartz" } }
-		{ id: "5A55996E58FE7BAF", item: { count: 1, id: "powah:magmator_basic" } }
-		{ id: "113B408EA25E7981", item: { count: 1, id: "powah:furnator_basic" } }
 		{ id: "395FD75CF3DB8FCF", item: { count: 1, id: "productivelib:upgrade_base" } }
 	]
 	use_title: true

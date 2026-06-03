@@ -1,6 +1,6 @@
 filename = 'The_Undergarden-1.21.1-0.9.6.jar'
 name = 'The Undergarden'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

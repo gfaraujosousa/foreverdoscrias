@@ -1,6 +1,6 @@
 filename = 'mahoutsukai-1.21.1-v1.36.26.jar'
 name = 'Mahou Tsukai'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

@@ -1,6 +1,6 @@
 filename = 'IceAndFireCE-2.0-beta.16-1.21.1-neoforge.jar'
 name = 'IceAndFire Community Edition'
-side = 'server'
+side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'

@@ -830,33 +830,6 @@
 		}
 		{
 			dependencies: ["55D7CD0FA8F1AE48"]
-			id: "17F7964611D893BE"
-			rewards: [
-				{
-					id: "7579F729BB4B9B15"
-					item: {
-						count: 1
-						id: "utilitarian:fluid_hopper"
-					}
-					type: "item"
-				}
-				{
-					id: "0D401BDCBDB7A49A"
-					type: "xp"
-					xp: 50
-				}
-			]
-			shape: "hexagon"
-			tasks: [{
-				id: "4108B5EDBF82261A"
-				item: { count: 1, id: "railcraft:fluid_loader" }
-				type: "item"
-			}]
-			x: 0.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["55D7CD0FA8F1AE48"]
 			id: "365D4B1DC953D406"
 			rewards: [
 				{

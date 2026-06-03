@@ -1,6 +1,6 @@
 filename = 'traveloptics-4.4.0.1-1.21.1.jar'
 name = "T.O Magic 'n Extras - Iron's Spells Addon"
-side = 'server'
+side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'alpha'

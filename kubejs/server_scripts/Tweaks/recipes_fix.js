@@ -42,28 +42,6 @@ KubeJSTweaks.beforeRecipes(event => {
       }
     })
 
-  // Simple key renaming to match current changes
-  event.getEntry(/^createaddition:compat\/immersiveengineering\/rolling\//)
-    .forEach(entry => {
-      entry.renameKey("result", "results", true)
-      entry.renameKey("input", "ingredients", true)
-    })
-
-  // Simple key renaming to match current changes
-  event.getEntry("createaddition:compat/ae2/charged_certus_quartz")
-    .forEach(entry => {
-      entry.renameKey("result", "results", true)
-      entry.renameKey("ingredient", "ingredients", true)
-    })
-
-  // this is the way now with biome_predicates
-  event.getEntry("createaddition:compat/immersiveengineering/sphalerite")
-    .forEach(entry => {
-      entry.json().add("biome_predicates", [
-        ["minecraft:is_overworld"]
-      ])
-    })
-
   // Scans items on result and add them back as conditions, izi fix
   event.getEntry(/^farmingforblockheads:market\//)
     .forEach(entry => {
@@ -75,12 +53,6 @@ KubeJSTweaks.beforeRecipes(event => {
     .forEach(entry => {
       entry.addConditionsFromKey("ingredients")
     })
-
-  event.getEntry(["merrymaking:aged_pine_mantel", "merrymaking:exposed_pine_mantel", "merrymaking:pine_mantel", "merrymaking:weathered_pine_mantel"])
-    .forEach(entry => {
-      entry.addConditionsFromKey("key")
-    })
-
 
   // Fix a typo, they missed a `s`
   event.getEntry([
@@ -176,20 +148,6 @@ KubeJSTweaks.beforeRecipes(event => {
   event.getEntry("farmersdelight:integration/create/filling/chocolate_pie")
     .forEach(entry => {
       entry.replaceValueAtKey("ingredients", "fluid_tag", "c:chocolates", "c:chocolate")
-    })
-
-  event.getEntry("mekmm:compat/mysticalagradditions/planting/awakened_draconium")
-    .forEach(entry => {
-      entry.fixItemAtKey("main_output")
-      let ci = entry.json().get("chemical_input")
-      if (ci.has("gas")) {
-        ci.add("chemical", ci.remove("gas"))
-      }
-    })
-
-  event.getEntry("botanypots:allthemodium/crop/ancient_soulberries")
-    .forEach(entry => {
-      entry.addConditionsFromKey("input")
     })
 
   event.getEntry("bellsandwhistles:metro/metro_window").forEach(entry => {

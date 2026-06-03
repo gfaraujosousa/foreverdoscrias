@@ -1,6 +1,6 @@
 filename = 'ars_elemancy-1.21.1-1.17.jar'
 name = 'Ars Elemancy'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

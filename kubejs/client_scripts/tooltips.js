@@ -143,17 +143,6 @@ ItemEvents.modifyTooltips(allthemods => {
         Text.of("§aFound in Treasure Bastions"),
     ])
 
-    //Mystical Agriculture
-    allthemods.add(/mysticalagriculture:.*watering_can/,[
-        Text.of("§cDisabled for Fake Player"),
-        Text.of("§c(Blocks like Modular Routers, Clickers, etc)")
-    ])
-
-    allthemods.add('toolbelt:belt', [
-        Text.of("§7Has it's own slot to be placed in"),
-        Text.of("§7Check your Keybinds for \"Open Belt Slot Inventory\"")
-    ])
-
 	//Hyperbox
     if (Platform.isLoaded("hyperbox")) {
         allthemods.add('hyperbox:hyperbox', [

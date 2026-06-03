@@ -1,6 +1,6 @@
 filename = 'solcarrot-1.21.1-1.16.6.jar'
 name = 'Spice of Life: Carrot Edition'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

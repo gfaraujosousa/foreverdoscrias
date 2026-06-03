@@ -1,6 +1,6 @@
 filename = 'DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar'
 name = 'Distant Horizons: A Level of Detail mod'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge', 'fabric' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

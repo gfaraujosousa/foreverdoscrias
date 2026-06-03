@@ -38,7 +38,6 @@
 		{ id: "68577939B052AD66", item: { components: { "minecraft:stored_enchantments": { levels: { "minecraft:looting": 1 } } }, count: 1, id: "minecraft:enchanted_book" } }
 		{ id: "3F56AAEEE7B4829B", item: { components: { "minecraft:stored_enchantments": { levels: { "minecraft:blast_protection": 2 } } }, count: 1, id: "minecraft:enchanted_book" } }
 		{ id: "361691F79EC5CB6D", item: { count: 1, id: "chipped:chisel" } }
-		{ id: "725C502A18E14F81", item: { count: 1, id: "ironfurnaces:upgrade_copper" } }
 		{
 			count: 64
 			id: "22BBDC0A291A9F4C"

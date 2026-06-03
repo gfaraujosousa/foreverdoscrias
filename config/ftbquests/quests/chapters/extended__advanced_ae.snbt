@@ -1381,27 +1381,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["34FBD04361657724"]
-			id: "0E06F323BF8C1D73"
-			optional: true
-			rewards: [{
-				count: 16
-				id: "00B94BA913CDAB01"
-				item: {
-					count: 1
-					id: "extendedae:entro_crystal"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "1854DDA036C8A2BA"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mysticalagriculture:entro_seeds)component(fuzzy:{\"productivebees:bee_type\":\"productivebees:entro\"}))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.0d
-		}
-		{
 			dependencies: ["14FC9E4A3C80C0AE"]
 			id: "411A463E98C3B102"
 			tasks: [

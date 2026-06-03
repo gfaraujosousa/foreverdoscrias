@@ -174,18 +174,9 @@ ServerEvents.recipes(allthemods => {
   mekCrushing({item:'irons_spellbooks:raw_mithril', count:4}, {tag:'c:ores/mithril'}, 'mithril_ore_to_raw')
     
   //mekEnriching(output{item: 'mod:item', count: 0}, input{item/tag: 'mod:item/tag', count: 0}, 'id');
-  mekEnriching({item: 'mysticalagriculture:prosperity_shard', count: 3}, {tag:'c:ores/prosperity'}, 'prosperity_ore_to_shard')
-  mekEnriching({item: 'mysticalagriculture:inferium_essence', count: 3}, {tag:'c:ores/inferium'}, 'inferium_ore_to_essence')
   mekEnriching({item: 'theurgy:sal_ammoniac_crystal', count: 3}, {tag:'c:ores/sal_ammoniac'}, 'sal_ammoniac_ore_to_crystal')
-  mekEnriching({item: 'powah:uraninite_raw', count: 2}, {tag: 'c:ores/uraninite_poor'}, 'uraninite_poor_to_raw')
-  mekEnriching({item: 'powah:uraninite_raw', count: 4}, {tag: 'c:ores/uraninite_regular'}, 'uraninite_regular_to_raw')
-  mekEnriching({item: 'powah:uraninite_raw', count: 6}, {tag: 'c:ores/uraninite_dense'}, 'uraninite_dense_to_raw')
   mekEnriching({item: 'silentgear:bort', count: 3}, {tag: 'c:ores/bort'}, 'bort_ore_to_bort')
   mekEnriching({item: 'actuallyadditions:black_quartz', count: 2}, {tag: 'c:ores/black_quartz'}, 'black_quartz_ore_to_black_quartz')
-
-  global.xycraftColours.forEach(colour => {
-    mekEnriching({item: `xycraft_world:xychorium_gem_${colour}`, count: 4}, {tag:`c:ores/xychorium_${colour}`}, `${colour}_xychorium_ore_to_gem`)
-  })
 
   mekOxidizing({item:'mekanism:osmium', count:200}, 'c:ingots/osmium')
   mekOxidizing({item:'mekanism:osmium', count:1800}, 'c:storage_blocks/osmium')

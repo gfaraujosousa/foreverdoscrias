@@ -125,21 +125,6 @@ ServerEvents.recipes(allthemods => {
             }
         ).id(id)
     }
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_raw_block`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_raw_ore`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_ore`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/slurry/clean`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/crystal/from_slurry`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/clump/from_raw_block`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/clump/from_raw_ore`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/clump/from_ore`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/clump/from_shard`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/dirty_dust/from_clump`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/shard/from_raw_block`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/shard/from_raw_ore`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/shard/from_ore`})
-  allthemods.remove({ id: `xycraft_machines:compat/mek/processing/aluminum/shard/from_crystal`})
-
 })
 
 // This File has been authored by AllTheMods Staff, or a Community contributor for use in AllTheMods - AllTheMods 10.

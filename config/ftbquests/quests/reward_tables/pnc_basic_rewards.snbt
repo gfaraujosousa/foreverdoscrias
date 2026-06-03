@@ -14,16 +14,6 @@
 			weight: 1.5f
 		}
 		{
-			count: 10
-			id: "671B368C9776BB83"
-			item: {
-				count: 1
-				id: "securitycraft:reinforced_stone"
-			}
-			random_bonus: 5
-			weight: 1.5f
-		}
-		{
 			count: 5
 			id: "62F072B82E267AF4"
 			item: {

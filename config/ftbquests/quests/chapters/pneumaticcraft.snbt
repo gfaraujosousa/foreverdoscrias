@@ -261,39 +261,6 @@
 		}
 		{
 			dependencies: ["371A34B297C8A8EF"]
-			dependency_requirement: "one_completed"
-			hide_dependency_lines: false
-			hide_until_deps_complete: true
-			id: "6FD65139CD50A8C0"
-			min_required_dependencies: 1
-			optional: true
-			rewards: [
-				{
-					count: 5
-					id: "6318CBE3EBAB4501"
-					item: {
-						count: 1
-						id: "pneumaticcraft:ingot_iron_compressed"
-					}
-					random_bonus: 5
-					type: "item"
-				}
-				{
-					id: "5BDFCB2DDCBA2C60"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [{
-				id: "49A8320F9EA7F4BD"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mysticalagriculture:compressed_iron_seeds)component(fuzzy:{\"minecraft:attribute_modifiers\":{modifiers:[]},\"minecraft:enchantments\":{levels:{}},\"minecraft:lore\":[],\"minecraft:max_stack_size\":64,\"minecraft:rarity\":\"common\",\"minecraft:repair_cost\":0,\"productivebees:bee_type\":\"productivebees:compressed_iron\"}))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["371A34B297C8A8EF"]
 			id: "40F634AC38F42B88"
 			rewards: [{
 				id: "740A676015A9235B"
@@ -1531,32 +1498,6 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["649167FC31EB916E"]
-			id: "42951D14ADCD9332"
-			rewards: [
-				{
-					id: "618C5C25773A6B26"
-					item: {
-						count: 1
-						id: "pamhc2foodcore:potatochipsitem"
-					}
-					type: "item"
-				}
-				{
-					id: "2B26D0DEC6A0AC55"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [{
-				id: "569BF001CEBF7853"
-				item: { count: 1, id: "pneumaticcraft:cod_n_chips" }
-				type: "item"
-			}]
-			x: 8.0d
 			y: 6.5d
 		}
 		{

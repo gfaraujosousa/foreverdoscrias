@@ -58,10 +58,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', allthemods => {
 //     allthemods.remove('mekmm:unstable_dimensional_gas')
 // })
 
-RecipeViewerEvents.removeRecipes(event => {
-    event.remove(["xycraft_machines:extractor/enderio/grains_of_infinity"])
-})
-
 RecipeViewerEvents.removeEntries('item', allthemods => {
     for (let yeet of runicYEET) {
         allthemods.remove(yeet)
@@ -89,21 +85,14 @@ RecipeViewerEvents.removeEntries('item', allthemods => {
         "mekanism:creative_chemical_tank",
         "mekanism:creative_fluid_tank",
         "mekanism:creative_bin",
-        "bigreactors:reinforced_reactorcreativewatergenerator",
-        "bigreactors:basic_turbinecreativesteamgenerator",
-        "bigreactors:reinforced_turbinecreativesteamgenerator",
-        "functionalstorage:creative_vending_upgrade",
         "enderio:creative_power",
         "ae2:creative_storage_cell",
-        "mysticalagriculture:creative_soulium_dagger",
         "modularrouters:creative_module",
         "modern_industrialization:creative_tank",
         "modern_industrialization:creative_storage_unit",
         "pneumaticcraft:creative_upgrade",
         "quarryplus:creative_generator",
         "rftoolspower:dimensionalcell_creative",
-        "xycraft_machines:item_selector",
-        "xycraft_machines:fluid_selector",
         "stevescarts:module_creative_engine",
         "stevescarts:module_creative_hull",
         "stevescarts:upgrade_creative_mode",
@@ -156,23 +145,11 @@ RecipeViewerEvents.removeEntries('item', allthemods => {
 })
 
 RecipeViewerEvents.addInformation('item', allthemods => {
-    allthemods.add('justdirethings:polymorphic_catalyst', [
-        '§8Drop a §cPolymorphic Catalyst§8 into §1Water§8 to get Polymorphic Fluid'
-    ])
-    allthemods.add('justdirethings:portal_fluid_catalyst', [
-        '§8Drop a §dPortal Fluid Catalyst§8 into Polymorphic Fluid§8 in t§dThe End§8 to get §5Unstable Portal Fluid'
-    ])
 })
 
 RecipeViewerEvents.addInformation('fluid', allthemods => {
     allthemods.add("advanced_ae:quantum_infusion_source", [
         '§8In the Reaction Chamber: §e4000mb of Water§8 + §e1x Quantum Infused Dust§8 = §b1000mb of Quantum Infusion'
-    ])
-    allthemods.add("justdirethings:polymorphic_fluid_source", [
-        '§8Drop a §cPolymorphic Catalyst§8 into §bWater§8 to get Polymorphic Fluid'
-    ])
-    allthemods.add("justdirethings:unstable_portal_fluid_source", [
-        '§8Drop a §dPortal Fluid Catalyst§8 into §dPolymorphic Fluid§8 in §5The End§8 to get §5Unstable Portal Fluid'
     ])
 })
 

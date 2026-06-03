@@ -1,6 +1,6 @@
 filename = 'supermartijn642corelib-1.1.21-neoforge-mc1.21.jar'
 name = "SuperMartijn642's Core Lib"
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

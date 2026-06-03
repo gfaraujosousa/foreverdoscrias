@@ -34,12 +34,6 @@ ServerEvents.recipes(allthemods => {
             'raw': null,
             'amount': 15
         },
-        'prosperity_sulfur': {
-            'ore': '#c:ores/prosperity',
-            'ingot': 'mysticalagriculture:prosperity_shard',
-            'raw': null,
-            'amount': 15
-        },
         'iesnium_sulfur': {
             'ore': '#c:ores/iesnium',
             'ingot': '#c:ingots/iesnium',

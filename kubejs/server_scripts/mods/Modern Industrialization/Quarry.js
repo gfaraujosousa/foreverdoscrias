@@ -56,8 +56,7 @@ ServerEvents.recipes(event => {
             { item: 'alltheores:aluminum_ore', amount: 1, probability: 0.4 },
             { item: 'alltheores:salt_ore', amount: 1, probability: 0.12 },
             { item: 'minecraft:emerald_ore', amount: 1, probability: 0.1 },
-            { item: 'modern_industrialization:quartz_ore', amount: 1, probability: 0.2 },
-            { item: 'powah:uraninite_ore', amount: 1, probability: 0.08 }
+            { item: 'modern_industrialization:quartz_ore', amount: 1, probability: 0.2 }
         ]
     )
 

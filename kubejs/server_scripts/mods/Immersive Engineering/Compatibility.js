@@ -88,24 +88,6 @@ ServerEvents.recipes(allthemods => {
     ).id(`allthemods:cloche/${mod.replace(":", '/')}${crop.result}`)
   }
 
-  //(Mama's) Herbs and Harvest Seeds
-  const hPlants = ['asparagus', 'barley', 'blackberry', 'blueberry', 'broccoli', 'cabbage', 'cauliflower', 'celery', 'cucumber', 'eggplant', 'green_bean', 'green_pepper', 'lettuce', 'pineapple', 'radish', 'raspberry', 'rye', 'squash', 'strawberry', 'tomato','turnip', 'zucchini']
-  const hHerbs = ['basil', 'bay_leaf', 'chive', 'cilantro', 'dill', 'lemongrass', 'mint', 'mustard', 'oregano', 'parsley', 'peppercorn', 'rosemary', 'sage', 'thyme']
-  const hSeeds = []
-  hPlants.forEach(seed => {
-    let crop = {seed: `${seed}_seeds`, render: `${seed}_crop`, result: `${seed}`}
-    hSeeds.push(crop)
-  })
-  hHerbs.forEach(seed => {
-    let crop = {seed: `${seed}_seeds`, render: `${seed}_crop`, result: `fresh_${seed}`}
-    hSeeds.push(crop)
-  })
-  hSeeds.forEach(crop => {
-    let mod = 'herbsandharvest:'
-    cloche(crop, mod)
-  })
-  
-
   //Pam's seeds
   const pamSeeds = []
   Ingredient.of("#c:seeds").itemIds.forEach(seed => {

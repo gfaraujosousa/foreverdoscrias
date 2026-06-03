@@ -2732,25 +2732,6 @@
 			y: 10.0d
 		}
 		{
-			id: "6C5D61A704DC125A"
-			rewards: [{
-				count: 3
-				id: "4B64997D81D9EB84"
-				item: {
-					count: 1
-					id: "mysticalagriculture:dye_essence"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6CA87D071A115686"
-				item: { count: 1, id: "the_bumblezone:flower_headwear" }
-				type: "item"
-			}]
-			x: -7.0d
-			y: -2.5d
-		}
-		{
 			id: "5443AA65C0D0C599"
 			rewards: [{
 				count: 2

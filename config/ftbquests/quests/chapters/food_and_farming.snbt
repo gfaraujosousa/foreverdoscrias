@@ -110,37 +110,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: {
-				id: "pamhc2trees:starfruititem"
-			}
-			icon_scale: 1.5d
-			id: "1827DEEA2DF1B144"
-			rewards: [
-				{
-					id: "2EFEA345691F570D"
-					item: {
-						count: 1
-						id: "minecraft:wheat_seeds"
-					}
-					type: "item"
-				}
-				{
-					id: "769A50AFA27134F2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 1.5d
-			tasks: [{
-				id: "78D7794707E4BD83"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:crops)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 0.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["43021923E220CF68"]
 			id: "72717D1135486D7F"
 			rewards: [
@@ -336,41 +305,6 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1D2EF12FD7FDD217"]
-			id: "1697CC05D08B388D"
-			rewards: [
-				{
-					id: "634BD1679C226F35"
-					item: {
-						count: 1
-						id: "pamhc2foodcore:friedchickenitem"
-					}
-					type: "item"
-				}
-				{
-					id: "551DA8AE385BDF12"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					count: 10L
-					id: "611CC8005150DC9B"
-					item: { count: 10, id: "minecraft:feather" }
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "0CAC6A36AC5A6708"
-					item: { count: 5, id: "minecraft:chicken" }
-					type: "item"
-				}
-			]
-			x: 6.0d
 			y: 1.0d
 		}
 		{

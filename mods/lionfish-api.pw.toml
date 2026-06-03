@@ -1,6 +1,6 @@
 filename = 'lionfishapi-2.7-fix-fix.jar'
 name = 'Lionfish API'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

@@ -1,6 +1,6 @@
 filename = 'formations-1.0.4-neoforge-mc1.21.jar'
 name = 'Formations (Structure Library)'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

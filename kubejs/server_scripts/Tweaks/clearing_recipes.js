@@ -35,21 +35,6 @@ ServerEvents.recipes(allthemods => {
 		allthemods.shapeless(material, [material]).id(`allthemods:clear_draconicevolution/${name}`)
 	})
 	
-	// Powah Energizing Rod Clearing
-	const powahclearing = [
-		"starter",
-		"basic",
-		"hardened",
-		"blazing",
-		"niotic",
-		"spirited",
-		"nitro"
-	]
-	powahclearing.forEach((name) => {
-		let material = Item.of(`powah:energizing_rod_${name}`)
-		
-		allthemods.shapeless(material, [material]).id(`allthemods:clear_powah/energizing_rod_${name}`)
-	})
 })
 
 // This File has been authored by AllTheMods Staff, or a Community contributor for use in AllTheMods - AllTheMods 10.

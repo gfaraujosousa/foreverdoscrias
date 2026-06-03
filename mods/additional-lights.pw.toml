@@ -1,6 +1,6 @@
 filename = 'additional_lights-neoforge-1.21-2.1.10.jar'
 name = 'Additional Lights'
-side = 'server'
+side = 'both'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

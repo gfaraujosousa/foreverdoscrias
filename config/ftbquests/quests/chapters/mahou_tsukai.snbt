@@ -263,48 +263,6 @@
 				"54E6C0D1BB442184"
 			]
 			icon: {
-				id: "evilcraft:blood_stain"
-			}
-			id: "0D19FB62C2C1D9F7"
-			rewards: [
-				{
-					count: 9
-					id: "02340AC7D3461843"
-					item: {
-						count: 1
-						id: "mob_grinding_utils:dreadful_dirt"
-					}
-					type: "item"
-				}
-				{
-					id: "34FD1AAAEF75CA9A"
-					type: "xp_levels"
-					xp_levels: 1
-				}
-			]
-			size: 1.5d
-			tasks: [
-				{
-					count: 2L
-					id: "4A084703BE712433"
-					item: { count: 2, id: "mahoutsukai:powdered_iron" }
-					type: "item"
-				}
-				{
-					id: "5B766A8E75D11F3A"
-					item: { count: 1, id: "mahoutsukai:powdered_emerald" }
-					type: "item"
-				}
-			]
-			x: -0.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"6AD061C4331BE1F8"
-				"54E6C0D1BB442184"
-			]
-			icon: {
 				id: "minecraft:netherite_shovel"
 			}
 			id: "5149BDF6BC4B3857"
@@ -859,26 +817,6 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["002B8F2DE2CB4D2C"]
-			id: "731A4846BC556AE1"
-			rewards: [{
-				count: 9
-				id: "6B765B1257BF468B"
-				item: {
-					count: 1
-					id: "mob_grinding_utils:delightful_dirt"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "303DC4CF00EBF72D"
-				item: { count: 1, id: "mahoutsukai:scroll_death_collection" }
-				type: "item"
-			}]
-			x: -5.5d
 			y: -5.0d
 		}
 		{
