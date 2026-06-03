@@ -1,9 +1,0 @@
-{
-  "replace": true,
-  "values": [
-    {
-      "id": "terralith:setup",
-      "required": false
-    }
-  ]
-}

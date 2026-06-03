@@ -1,13 +1,25 @@
-name = "Create: Occult Engineering"
-filename = "occultengineering-1.21.1-0.12.3.jar"
+filename = 'occultengineering-1.21.1-0.12.3.jar'
+name = 'Create: Occult Engineering'
 side = "both"
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'occultengineering-1.21.1-0.12.3.jar'
 
 [download]
-hash-format = "sha1"
-hash = "4837e4ace0c1140aea8217b4d0347c652942c094"
-mode = "metadata:curseforge"
+hash = '4837e4ace0c1140aea8217b4d0347c652942c094'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
 file-id = 7999508
 project-id = 1206040
+
+[[x-prismlauncher-dependencies]]
+addonId = '361026'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '328085'
+type = 'REQUIRED'

@@ -1,7 +1,7 @@
 {
   "replace": true,
   "values": [
-    "#forever:otherworld_fire",
-    "#forever:otherworld_marsh"
+    "allthemodium:desert",
+    "allthemodium:desert_hills"
   ]
 }

@@ -3,7 +3,7 @@
 /dist/
 /export/
 *.mrpack
-*.zip
+/*.zip
 
 # CI import cache for CurseForge files packwiz cannot download directly.
 /manual-downloads/

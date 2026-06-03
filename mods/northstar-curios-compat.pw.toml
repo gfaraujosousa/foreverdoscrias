@@ -1,0 +1,25 @@
+filename = 'northstar-curios-compat-neoforge-1.2.5.jar'
+name = 'Northstar Curios Compat'
+side = "both"
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'northstar-curios-compat-neoforge-1.2.5.jar'
+
+[download]
+hash = 'cf9480b6e53ace8f1f91e078a9c0e8d0d9cd167c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8108614
+project-id = 1472218
+
+[[x-prismlauncher-dependencies]]
+addonId = '309927'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1318310'
+type = 'REQUIRED'

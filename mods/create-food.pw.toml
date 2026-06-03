@@ -1,13 +1,18 @@
-name = "Create: Food"
-filename = "createfood-neoforge-1.21.1-2.4.0.jar"
-side = "both"
+filename = 'createfood-neoforge-1.21.1-2.5.0.jar'
+name = 'Create: Food'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'createfood-neoforge-1.21.1-2.5.0.jar'
 
 [download]
-hash-format = "sha1"
-hash = "ac5a9dd4c698342347d2ecffb3052df69bc53185"
-mode = "metadata:curseforge"
+hash = 'b2d282076eb8c1c66a5da41e681bc02057e1c786'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
-file-id = 8028833
+file-id = 8177587
 project-id = 959439

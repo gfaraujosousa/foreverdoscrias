@@ -3,7 +3,7 @@
 /dist/
 /export/
 *.mrpack
-*.zip
+/*.zip
 
 # Minecraft runtime folders
 /run/

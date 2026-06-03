@@ -1,0 +1,49 @@
+filename = 'ntgl-1.21.1-3.1.5.jar'
+name = "[NTGL] NukaTeam's Gun Lib"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ntgl-1.21.1-3.1.5.jar'
+
+[download]
+hash = 'a88af41462ba8ead362cfd427f3e12173f309442'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8095107
+project-id = 998474
+
+[[x-prismlauncher-dependencies]]
+addonId = '1285177'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1023913'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '388172'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '317269'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '321117'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '422301'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '352835'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '658587'
+type = 'OPTIONAL'

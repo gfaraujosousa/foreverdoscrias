@@ -1,13 +1,21 @@
-name = "Potentials"
-filename = "potentials-neoforge-1.21-0.7.1.jar"
+filename = 'potentials-neoforge-1.21-0.7.1.jar'
+name = 'Potentials'
 side = "both"
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '[Neoforge 1.21] Potentials 0.7.1'
 
 [download]
-hash-format = "sha1"
-hash = "c2525c00049e1773a813ed240ac96914c01e0b3f"
-mode = "metadata:curseforge"
+hash = 'c2525c00049e1773a813ed240ac96914c01e0b3f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
 file-id = 6912628
 project-id = 1165185
+
+[[x-prismlauncher-dependencies]]
+addonId = '419699'
+type = 'REQUIRED'

@@ -1,13 +1,13 @@
 name = "foreverdoscrias"
 author = "Biel"
-version = "1.0.0"
+version = "2.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "b5f38174b5109349bcbc2ea46b49d41ebf5a39d99f9075300bd4d96ba72b72fe"
+hash = "e4acfb995673f024b1fdd6eef7a38a221bef5c7b2e57d4eb6a2c9e12227043bd"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.230"
+neoforge = "21.1.228"

@@ -1,0 +1,21 @@
+filename = 'trashslot-neoforge-1.21.1-21.1.10.jar'
+name = 'TrashSlot'
+side = "both"
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'trashslot-neoforge-1.21.1-21.1.10.jar'
+
+[download]
+hash = 'ee869412c35848757ced95b1ac84f4c132ebbe7b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8019502
+project-id = 235577
+
+[[x-prismlauncher-dependencies]]
+addonId = '531761'
+type = 'REQUIRED'

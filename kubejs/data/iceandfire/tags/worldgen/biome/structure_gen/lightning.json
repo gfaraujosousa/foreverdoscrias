@@ -1,6 +1,7 @@
 {
   "replace": true,
   "values": [
-    "#forever:otherworld_storm"
+    "allthemodium:desert",
+    "allthemodium:desert_hills"
   ]
 }

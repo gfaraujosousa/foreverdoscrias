@@ -1,13 +1,18 @@
-name = "Distant Horizons: A Level of Detail mod"
-filename = "DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar"
-side = "both"
+filename = 'DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar'
+name = 'Distant Horizons: A Level of Detail mod'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '3.0.3-b - 1.21.1 neo/fabric'
 
 [download]
-hash-format = "sha1"
-hash = "bc865b11c94581949384b6d5820b58aee8b7273c"
-mode = "metadata:curseforge"
+hash = 'bc865b11c94581949384b6d5820b58aee8b7273c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
 file-id = 8037637
 project-id = 508933

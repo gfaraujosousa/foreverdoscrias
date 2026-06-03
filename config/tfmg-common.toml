@@ -24,9 +24,9 @@
 	FEtoWattTickConversionRate = 1.0
 	#.
 	#The minimum electric current that will make electrolyzers operational.
-	# Default: 10
+	# Default: 5
 	# Range: > 1
-	electrolysisMinimumCurrent = 10
+	electrolysisMinimumCurrent = 5
 	#.
 	#The maximum length of engines.
 	# Default: 5

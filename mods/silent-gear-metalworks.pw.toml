@@ -1,0 +1,25 @@
+filename = 'sgearmetalworks-1.21.1-1.5.0.jar'
+name = 'Silent Gear Metalworks'
+side = "both"
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'sgearmetalworks-1.21.1-1.5.0.jar'
+
+[download]
+hash = '9685bfa855032fe52b06f992a1070fae94487e76'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7897500
+project-id = 1199188
+
+[[x-prismlauncher-dependencies]]
+addonId = '1184570'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '297039'
+type = 'REQUIRED'

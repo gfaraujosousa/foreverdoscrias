@@ -1,13 +1,18 @@
-name = "AzureLib"
-filename = "azurelib-neo-1.21.1-3.1.8.jar"
+filename = 'azurelib-neo-1.21.1-3.1.8.jar'
+name = 'AzureLib'
 side = "both"
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'azurelib-neo-1.21.1-3.1.8.jar'
 
 [download]
-hash-format = "sha1"
-hash = "d7762c1e334ed9d654675e48782eea42057a3f7c"
-mode = "metadata:curseforge"
+hash = 'd7762c1e334ed9d654675e48782eea42057a3f7c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
 file-id = 7961057
 project-id = 817423

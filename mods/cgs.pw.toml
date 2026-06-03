@@ -1,0 +1,29 @@
+filename = 'create-gunsmithing-1.21.1-1.4.6.jar'
+name = 'Create: Gunsmithing'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'create-gunsmithing-1.21.1-1.4.6.jar'
+
+[download]
+hash = '005effc9d64d3b008ff60fe9ab5e8faaf024017f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8095147
+project-id = 1194036
+
+[[x-prismlauncher-dependencies]]
+addonId = '328085'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '998474'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '658587'
+type = 'REQUIRED'

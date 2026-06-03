@@ -10,7 +10,7 @@
       "book.                                                                           "
     ],
     "//default": false,
-    "value": false
+    "value": true
   },
   "only_in_enchanting_table": {
     "//": [
