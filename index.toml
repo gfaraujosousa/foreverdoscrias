@@ -6570,7 +6570,7 @@ hash = "9e1b74aced857202769ad4b2d70dbc1681e3464291dfb58f3a375c5a1b7cae4b"
 
 [[files]]
 file = "config/memorysettings.json"
-hash = "386544bc5ce2e3dc854e6d9e933603ec485f2d24ed4f6e39e859e40b43fd4a68"
+hash = "2104025987fd8f7a4592caa0454d7796541e92dc83d1ef440de68369140c41af"
 
 [[files]]
 file = "config/merequester-common.toml"
@@ -16972,6 +16972,11 @@ hash = "2ad1aed47123c3440d64fe156b1fa1754cc0243be4675f1d78963c742fcb7cc0"
 metafile = true
 
 [[files]]
+file = "mods/fagas-discord-bridge.pw.toml"
+hash = "01b3e9a9ff2011bea184419cefe82db00ffa587dfb3fdf91c92bb4b0dc4b38a1"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "9b3d7da476cd78d5c535fa09895311d1a24e7db9c3bd57f1070ca289ece752fb"
 metafile = true
@@ -22539,3 +22544,7 @@ hash = "5cbf4d99bc7ce4f0df5c15974d276e0949bf6974d48d88a77d5e307b0b9be8af"
 [[files]]
 file = "shaderpacks/MakeUp-UltraFast-9.5a.zip"
 hash = "433e1edd5d1193ccf4f59c9202a00896820777e73ac10b109b8ee307847fc775"
+
+[[files]]
+file = "user_jvm_args.txt"
+hash = "c9f542db057ccb6c00bc6c8f7286f4b30bd42404b3f366f619ce18948740ae25"

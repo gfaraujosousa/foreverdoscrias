@@ -9,11 +9,11 @@
   },
   "minimumServer": {
     "desc:": "Set the servers minimum memory warning threshold in MB. Choose the lowest value possible which keeps the pack playable. default:2500, min 2500, max 25000",
-    "minimumServer": 4096
+    "minimumServer": 10240
   },
   "maximumServer": {
     "desc:": "Set the servers maximum memory warning threshold in MB. Choose a generous maximum with some additional over the required, e.g.recommended is 6000mb then set this to ~8000mb",
-    "maximumServer": 128000
+    "maximumServer": 10240
   },
   "disableWarnings": {
     "desc:": "Disable the memory warnings, default: false",
@@ -34,10 +34,10 @@
   "recommendedMemory": {
     "desc:": "Set the recommended memory values based off system memory in MB. [\"system memory:recommended\"]",
     "memory values": [
-      "16000:8000",
-      "32000:12000",
-      "48000:12000",
-      "64000:12000"
+      "16000:10240",
+      "32000:10240",
+      "48000:10240",
+      "64000:10240"
     ]
   }
 }
