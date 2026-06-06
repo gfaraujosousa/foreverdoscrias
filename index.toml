@@ -6549,6 +6549,10 @@ file = "config/mahoutsukai-server.toml"
 hash = "db16ed27bafef3b7987aaf33b2efa90576a63f9d5579d93419913d64c73bff67"
 
 [[files]]
+file = "config/mcdiscordbridge-common.toml"
+hash = "c51fb0e2d9dc95db75bbef792daeceaf53151d525214844044a65e6fdd6db93b"
+
+[[files]]
 file = "config/mcjtylib-client.toml"
 hash = "e53f528f91643fdbeb901028f577deeb4cae1335d66b6be178116d27ebe90a6d"
 
