@@ -17122,6 +17122,11 @@ hash = "62803db9a8b3f660ab331626b5b4f13214590615ec86d1bef6a4d37f0063524f"
 metafile = true
 
 [[files]]
+file = "mods/glitchcore.pw.toml"
+hash = "fa2d61b9c6b4446bbad9767e20bbd43c8c1e25bf0f7ecc9a237bf995456d02f5"
+metafile = true
+
+[[files]]
 file = "mods/glodium.pw.toml"
 hash = "213f9258a852a90a8fbaafd1c319754deaf1a7dc78de89c03bd057a9a6a2673b"
 metafile = true
@@ -17784,6 +17789,11 @@ metafile = true
 [[files]]
 file = "mods/selene.pw.toml"
 hash = "27b9b9a52b4f70992846c311066056e21af0df5703fcbed44efebf145a2c8206"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons.pw.toml"
+hash = "eb438b9d4a49c0cc65560cdc295bf927cabc6f34319375a0cfbf3aece662add8"
 metafile = true
 
 [[files]]
