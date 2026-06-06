@@ -8,6 +8,9 @@
 # CI import cache for CurseForge files packwiz cannot download directly.
 /manual-downloads/
 
+# Prism/MultiMC instance templates are launcher metadata, not Minecraft files.
+/prism/
+
 # Minecraft runtime folders
 /run/
 /.minecraft/
@@ -24,7 +27,6 @@
 
 # Launcher/runtime files
 /optionsof.txt
-/servers.dat
 /usercache.json
 /usernamecache.json
 /launcher_profiles.json

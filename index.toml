@@ -9,6 +9,10 @@ file = "Makefile"
 hash = "14317f9a43d85ded1aeaeb989dc8c624cf6606f9532e783321897f71a9d9fc92"
 
 [[files]]
+file = "README.md"
+hash = "283b747806a8341a88da9031181a6eb63bd25dc13808c869994db7cc3446efe5"
+
+[[files]]
 file = "config/Advancedperipherals/general.toml"
 hash = "b066928d8192c178df0e5992a61063f8bf3ddee90c35d2bbfb078f558b9ec40d"
 
@@ -30,7 +34,7 @@ hash = "22eb382db8f67e78e2b54dfa97a471530d2d5e95d1c54ee41ce289b77cfff0f3"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "b2795ce353777bea7fcd1b28f9b424c392b8903868bb7ed75e1ce652e862b414"
+hash = "107447467320a3996bd6dcb59edafbad6ac4ce785deedb0b3fdb180a8d568efc"
 
 [[files]]
 file = "config/EnderStorage.cfg"
@@ -2230,11 +2234,11 @@ hash = "16774bad3d5684a5ecfb6e9e9a8ca5c158fbc8bb3c97568af830be925e6d3d2a"
 
 [[files]]
 file = "config/create-common.toml"
-hash = "1c632f62c30f4e1223669267196d2ff1a2c03e400bf565ff4fe81e20c7cd2bdf"
+hash = "2e77b1d93b40ce3f381ad7eb2a9e6d7148de917518be5c2616939a4369c4b140"
 
 [[files]]
 file = "config/create-server.toml"
-hash = "f1a3edd31cdcf2b602b7d51d1fe8ba5e88d6403580ba382ba4cbfab1ecb3a365"
+hash = "b712f7e31e4255ecde31a7b18850f2cccefd685dd0cd912b74acf7ebdd392c6f"
 
 [[files]]
 file = "config/create_aquatic_ambitions-server.toml"
@@ -6570,7 +6574,7 @@ hash = "9e1b74aced857202769ad4b2d70dbc1681e3464291dfb58f3a375c5a1b7cae4b"
 
 [[files]]
 file = "config/memorysettings.json"
-hash = "2104025987fd8f7a4592caa0454d7796541e92dc83d1ef440de68369140c41af"
+hash = "809ba76f0ea5193d81446048d7fbde2b2abce9d066b352736b1ee9f927b80ddd"
 
 [[files]]
 file = "config/merequester-common.toml"
@@ -7630,7 +7634,7 @@ hash = "a66c67a79db49455a3c6d090e519d5403bd79095a738054be2d0b64ffbf49a0a"
 
 [[files]]
 file = "config/sophisticatedbackpacks-server.toml"
-hash = "611096a141f67d4fc87c0ff373173b29335256dade90895923dcefdaa5590446"
+hash = "4976e1d9f455f035817827603a8cbd233b70da05ff61497264ee0f203c1c53b7"
 
 [[files]]
 file = "config/sophisticatedcore-client.toml"
@@ -18134,6 +18138,10 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "3ee9bfdc7ba195317b523bd7ddab040e27d4ffe4f13cd0b616f5915c410a461b"
+
+[[files]]
+file = "servers.dat"
+hash = "46db08cc150350b1449793b3c351a175fed2d28a901fdf6149a70db4f65ad86c"
 
 [[files]]
 file = "shaderpacks/BSL_v10.1.1 + Clrwl_1.0.5.zip"

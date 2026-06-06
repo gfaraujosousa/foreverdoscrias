@@ -1,0 +1,46 @@
+#Discord bot token or env:DISCORD_BOT_TOKEN
+discordApiKey = "token"
+#Only messages from this guild are accepted
+whitelistGuildId = "1248447307079221288"
+#Discord channel for chat bridge
+chatChannelId = "1502380836580753418"
+#Discord channel for admin logs
+adminLogChannelId = "1503907827679367268"
+enableJoinLeave = true
+enableDeaths = true
+enableAdvancements = true
+enableMinecraftChatToDiscord = true
+enableDiscordChatToMinecraft = true
+enableAdminLogs = true
+redactCommandArguments = true
+redactedCommands = ["login", "register", "password", "token", "discord", "op", "deop"]
+#Send Discord embeds for richer event logs
+enableEmbeds = true
+#Hex color for embeds, for example #57A5FF
+embedColorHex = "#57A5FF"
+#Include player head thumbnail in embeds when UUID is available
+includePlayerHeadInEmbeds = true
+#URL template with %uuid% placeholder
+playerHeadUrlTemplate = "https://crafatar.com/avatars/%uuid%?size=128&overlay"
+#Rotate bot activity text from botActivities
+enableBotActivityRotation = true
+botActivities = ["Moisés viado", "Guerra linguiceiro", "Luciano puta"]
+# Default: 20
+# Range: 5 ~ 3600
+botActivityRotateSeconds = 20
+#Send day milestone message every N minecraft days (0 disables)
+# Default: 0
+# Range: > 0
+dayMilestoneGap = 10
+#Enable Discord account linking to Minecraft players
+enableAccountLinking = true
+#How long link codes remain valid
+# Default: 600
+# Range: 30 ~ 86400
+linkCodeExpirySeconds = 600
+#Length of one-time account link code
+# Default: 6
+# Range: 4 ~ 12
+linkCodeLength = 6
+#PLAYING, WATCHING, LISTENING, COMPETING
+botActivityType = "WATCHING"

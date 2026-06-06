@@ -21,7 +21,6 @@
 
 # Launcher/runtime files
 /optionsof.txt
-/servers.dat
 /usercache.json
 /usernamecache.json
 /launcher_profiles.json
