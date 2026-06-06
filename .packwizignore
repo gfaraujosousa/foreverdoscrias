@@ -11,6 +11,9 @@
 # Prism/MultiMC instance templates are launcher metadata, not Minecraft files.
 /prism/
 
+# Pterodactyl egg metadata is panel tooling, not a Minecraft runtime file.
+/pterodactyl/
+
 # Minecraft runtime folders
 /run/
 /.minecraft/

@@ -1,0 +1,82 @@
+{
+  "_comment": "Pterodactyl egg for foreverdoscrias NeoForge server packs.",
+  "meta": {
+    "version": "PTDL_v2",
+    "update_url": null
+  },
+  "exported_at": "2026-06-06T00:00:00+00:00",
+  "name": "foreverdoscrias NeoForge",
+  "author": "admin@example.com",
+  "description": "Installs the foreverdoscrias CurseForge server pack from a GitHub Release asset and runs it with NeoForge.",
+  "features": null,
+  "docker_images": {
+    "Java 21": "ghcr.io/pterodactyl/yolks:java_21"
+  },
+  "file_denylist": [],
+  "startup": "java -Xms128M -XX:MaxRAMPercentage={{MAX_RAM_PERCENTAGE}} {{ZGC_ARG}} @libraries/net/neoforged/neoforge/{{NEOFORGE_VERSION}}/unix_args.txt nogui",
+  "config": {
+    "files": "{}",
+    "startup": "{\r\n  \"done\": \"Done\"\r\n}",
+    "logs": "{}",
+    "stop": "stop"
+  },
+  "scripts": {
+    "installation": {
+      "script": "#!/bin/bash\nset -euo pipefail\n\napt-get update\napt-get install -y ca-certificates curl jq unzip openjdk-21-jre-headless\n\ncd /mnt/server\n\nif [ -z \"${SERVER_PACK_URL}\" ]; then\n  echo \"SERVER_PACK_URL is required. Upload the server zip to a GitHub Release and paste the asset URL into this variable.\" >&2\n  exit 1\nfi\n\necho \"Downloading server pack from ${SERVER_PACK_URL}\"\ncurl -fL --retry 3 --retry-delay 2 -o server-pack.zip \"${SERVER_PACK_URL}\"\n\necho \"Extracting overrides and manifest\"\nrm -rf pack-extract\nmkdir -p pack-extract mods\nunzip -q server-pack.zip -d pack-extract\nif [ ! -f pack-extract/manifest.json ]; then\n  echo \"manifest.json was not found in the server pack zip.\" >&2\n  exit 1\nfi\nif [ -d pack-extract/overrides ]; then\n  cp -R pack-extract/overrides/. /mnt/server/\nfi\ncp pack-extract/manifest.json /mnt/server/manifest.json\n\nMC_VERSION=$(jq -r '.minecraft.version' manifest.json)\nMANIFEST_LOADER=$(jq -r '.minecraft.modLoaders[] | select(.primary == true) | .id' manifest.json | head -n 1)\nif [ -z \"${MINECRAFT_VERSION}\" ] || [ \"${MINECRAFT_VERSION}\" = \"latest\" ]; then\n  MINECRAFT_VERSION=\"${MC_VERSION}\"\nfi\nif [ -z \"${NEOFORGE_VERSION}\" ] || [ \"${NEOFORGE_VERSION}\" = \"latest\" ]; then\n  NEOFORGE_VERSION=\"${MANIFEST_LOADER#neoforge-}\"\nfi\n\necho \"Installing NeoForge ${NEOFORGE_VERSION} for Minecraft ${MINECRAFT_VERSION}\"\nNEOFORGE_INSTALLER=\"neoforge-${NEOFORGE_VERSION}-installer.jar\"\ncurl -fL --retry 3 --retry-delay 2 -o \"${NEOFORGE_INSTALLER}\" \"https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar\"\njava -jar \"${NEOFORGE_INSTALLER}\" --installServer\nrm -f \"${NEOFORGE_INSTALLER}\"\n\necho \"Downloading CurseForge manifest mods\"\njq -c '.files[]' manifest.json | while read -r file; do\n  PROJECT_ID=$(echo \"${file}\" | jq -r '.projectID')\n  FILE_ID=$(echo \"${file}\" | jq -r '.fileID')\n  URL=\"https://www.curseforge.com/api/v1/mods/${PROJECT_ID}/files/${FILE_ID}/download\"\n  FINAL_URL=$(curl -fLs -o /dev/null -w '%{url_effective}' \"${URL}\")\n  FILENAME=$(basename \"${FINAL_URL%%\\?*}\")\n  if [ -z \"${FILENAME}\" ] || [ \"${FILENAME}\" = \"download\" ]; then\n    FILENAME=\"${PROJECT_ID}-${FILE_ID}.jar\"\n  fi\n  if [ -f \"mods/${FILENAME}\" ]; then\n    echo \"Already exists: ${FILENAME}\"\n    continue\n  fi\n  echo \"Downloading ${FILENAME}\"\n  curl -fL --retry 3 --retry-delay 2 -o \"mods/${FILENAME}\" \"${URL}\"\ndone\n\nMOD_COUNT=$(find mods -maxdepth 1 -type f -name '*.jar' | wc -l)\necho \"Installed ${MOD_COUNT} mod jars\"\nif [ \"${MOD_COUNT}\" -lt 50 ]; then\n  echo \"The mods directory looks incomplete. Check the installer log for CurseForge download failures.\" >&2\n  exit 1\nfi\n\ncat > eula.txt <<'EOF'\neula=true\nEOF\n\nrm -rf pack-extract server-pack.zip\n\necho \"Install complete.\"\n",
+      "container": "ghcr.io/pterodactyl/installers:debian",
+      "entrypoint": "bash"
+    }
+  },
+  "variables": [
+    {
+      "name": "Server Pack URL",
+      "description": "Direct URL to the CurseForge server zip uploaded as a GitHub Release asset.",
+      "env_variable": "SERVER_PACK_URL",
+      "default_value": "https://github.com/gfaraujosousa/foreverdoscrias/releases/download/2.0.0/foreverdoscrias-2.0.0-curseforge-server.zip",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "required|url",
+      "field_type": "text"
+    },
+    {
+      "name": "Minecraft Version",
+      "description": "Minecraft version. Leave as 1.21.1 for this pack.",
+      "env_variable": "MINECRAFT_VERSION",
+      "default_value": "1.21.1",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "required|string|max:20",
+      "field_type": "text"
+    },
+    {
+      "name": "NeoForge Version",
+      "description": "NeoForge version. Leave as 21.1.228 for this pack.",
+      "env_variable": "NEOFORGE_VERSION",
+      "default_value": "21.1.228",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "required|string|max:32",
+      "field_type": "text"
+    },
+    {
+      "name": "Max RAM Percentage",
+      "description": "Maximum percentage of assigned container memory Java may use.",
+      "env_variable": "MAX_RAM_PERCENTAGE",
+      "default_value": "95.0",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "required|numeric|between:50,100",
+      "field_type": "text"
+    },
+    {
+      "name": "ZGC Argument",
+      "description": "Garbage collector argument. Use -XX:+UseZGC for this pack.",
+      "env_variable": "ZGC_ARG",
+      "default_value": "-XX:+UseZGC",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "nullable|string|max:64",
+      "field_type": "text"
+    }
+  ]
+}

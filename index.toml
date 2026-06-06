@@ -10,7 +10,7 @@ hash = "14317f9a43d85ded1aeaeb989dc8c624cf6606f9532e783321897f71a9d9fc92"
 
 [[files]]
 file = "README.md"
-hash = "283b747806a8341a88da9031181a6eb63bd25dc13808c869994db7cc3446efe5"
+hash = "b772f62d87148f51732e3dd4e0cd88d9cd968f26c73d029f65240e23a304c24c"
 
 [[files]]
 file = "config/Advancedperipherals/general.toml"
